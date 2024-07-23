@@ -1,2 +1,0 @@
-C:\Users\Khanov\Desktop\Projects\TransformToMicroservice\OilTanks\reactonsite\obj\Debug\siteonreact.esproj.SuggestedBindingRedirects.cache
-C:\Users\Khanov\Desktop\Projects\TransformToMicroservice\OilTanks\reactonsite\obj\Debug\siteonreact.esproj.CoreCompileInputs.cache

@@ -1,11 +1,12 @@
 {
   "name": "reactonsite",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "FfxlJjS1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.2",
     "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
@@ -13,20 +14,15 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.0.4"
   },
   "scripts": {
-    "start": "set HTTPS=true&&react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "serve": "http-server ./build -p 3001",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
-    "prestart": "node aspnetcore-https && node aspnetcore-react"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "eslint ."
   },
   "browserslist": {
     "production": [
@@ -41,7 +37,9 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-react-app": "^7.0.1",
-    "jest-editor-support": "^30.3.0"
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@craco/craco": "^7.0.0",
+    "prettier": "^2.7.1"
   }
 }
