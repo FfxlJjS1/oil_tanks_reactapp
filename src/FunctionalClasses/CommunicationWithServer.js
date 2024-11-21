@@ -1,7 +1,7 @@
 export class CommunicationWithServer {
-  static tankApi = 'api/Cistern'
-  static calculatorApi = 'api/Calculator'
-  static structuralAnalysisApi = 'api/StructuralAnalysis'
+  static tankApi = 'api_tanks/Cistern'
+  static calculatorApi = 'api_tanks/Calculator'
+  static structuralAnalysisApi = 'api_tanks/StructuralAnalysis'
 
   static async GetRequest(request) {
     const response = await fetch(request)
